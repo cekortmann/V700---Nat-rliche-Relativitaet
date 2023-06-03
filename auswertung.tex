@@ -6,7 +6,7 @@ Alle Messwerte werden im folgenden für ein Zeitintervall von einer Sekunde ange
 
 Die gemessene Untergrundrate ergibt sich zu
 \begin{equation*}
-    5.8167 \pm 2.4118 \,\unit{\becquerel} \; .
+    (0.582 \pm 0.241) \,\unit{\becquerel} \; .
 \end{equation*}
 Dabei wird die Standardabweichung über 
 \begin{equation}
@@ -15,6 +15,9 @@ Dabei wird die Standardabweichung über
 \end{equation}
 berechnet. Auch bei allen weiteren Messungen ergibt sich die Fehlerabweichung über \autoref{eqn:standardabweichung}
 Die Hintergrundrate muss von allen weiteren Messungen abgezogen werden.
+
+Zur Abschätzung der Zerfallsart wird zur Grundlage genommen, dass sämtliche $\alpha$-Strahlung bereist eine dünne Schutzkappe blockiert werden und die Abschrimung von $\beta$-Strahlen durch
+die Aluminiumplatte erfolgt, sodass nach Einfügen der Platte einzig die $\gamma$-Strahlung detektiert werden kann.
 
 \subsection{Natürliche radioaktive Stoffe}
 \label{sec:stoffe}
@@ -44,18 +47,73 @@ Zerfälle pro Minute detektiert. Daraus lässt sich schließen, dass der Anteil 
 Bei der zweiten Messung wird die Aktivität von Blaukorn, mit einer Masse $24.42\,\unit{\gram}$, einmal für ein Zeitintervall von zehn Minuten gemessen.
 Diese Messung wird nun für den Zeitraum von einer Sekunde angegeben
 \begin{equation*}
-    (33.1 \pm 5.75) \,\unit{\becquerel} \; .
+    (33.10 \pm 5.75) \,\unit{\becquerel} \; .
 \end{equation*}
 Auch hier wird wieder die Hintergrundrate abgezogen. Die Aktivität ergibt sich zu 
 \begin{equation*}
     A_{\symup{Blaukorn}} = (27.28 \pm 5.22) \, \unit{\becquerel} \; .
 \end{equation*}
-Desweiteren wird die spezifische Aktivität mittels \autoref{eqn:spezAkt} zu 
+Des Weiteren wird die spezifische Aktivität mittels \autoref{eqn:spezAkt} zu 
 \begin{equation*}
-    a_{\symup{Blaukorn}} = (1117.25 \pm 33.43) \,\unit{\becquerel}
+    a_{\symup{Blaukorn}} = (1117.25 \pm 33.43) \,\unit{\becquerel \per \kilo\gram}
 \end{equation*} 
 bestimmt. 
 
 Bei der Abschirmung mit Hilfe der Schutzkappe werden noch 45 Zerfälle pro Minute detektiert, sodass sich ein Anteil der Alphastrahlung von $77.34 \,\%$ 
 ergibt. Bei Abschirmung mit der Aluminiumplatte werden noch 34 Zerfälle pro Minute gezählt. Damit ergibt sich der Anteil der Betastrahlung zu 
 $6.06 \,\%$ ergibt.
+
+\subsection{Radioaktivität in der Raumluft}
+\label{sec:Radioaktivität in der Raumluft}
+
+Die mit dem Geiger-Müller-Zählrohr sind in der \autoref{tab:loon} dargestellt.
+
+\begin{table}
+    \centering 
+    \caption{Gemessene Zerfälle pro Minute des ungefüllten Ballons.}
+    \begin{tabular}{c c c}
+        \toprule
+        Messung & Anzahl $N$ der Zerfälle pro Minute\\
+        \midrule
+        1 & 31 \\
+        2 & 35 \\
+        3 & 39 \\
+        4 & 41 \\
+        5 & 24 \\
+    \end{tabular}
+\end{table}
+Daraus ergibt sich ein MIttelwert mit einer aus der Standardabweichung resultierender Abweichung von
+\begin{equation*}
+    \bar{N}= 34\pm 5.83\, .
+\end{equation*}
+Hier ist zu erwähnen, dass von einer Anzahl gesprochen wird und somit Dezimalstellen keinen Sinn ergeben. Jedoch wird hier diese angegeben und in weiteren 
+Berechnungen verwendet, um den Rundungsfehler möglichst gering zu halten.
+Für die Aktivität folgt so nach \autoref{eqn:Aktivität}
+\begin{equation*}
+    A= (0.57\pm 0.10)\, \text{Bq}\, .
+\end{equation*}
+Abzüglich der Hintergrundstrahlung ergibt sich so eine Aktivität von
+\begin{equation*}
+    A_{\text{luftleerer Ballon}}= (-0.02\pm 0.26)\, \text{Bq}\, .
+\end{equation*}
+Eine negative Aktivität ist physikalisch nicht möglich, aber es geht hervor, dass durch den Ballon ein Teil der Hintergrundstrahlung abgeschirmt wird.
+
+Nachdem der aufgeblasene und ionisierte Ballon einige Zeit im strahlungsreicheren Keller verbracht hat, wurde binnen einer 5 minütigen Messung eine Anzahl
+von 
+\begin{equation*}
+    N= 5986.00 \pm 77.37
+\end{equation*} 
+Daraus folgt eine Aktivität von
+\begin{equation*}
+    A= (19.95 \pm 0.26) \, \text{Bq}\, .
+\end{equation*}
+Für die bereinigte Aktivität folgt so 
+\begin{equation*}
+    A_{\text{aufgeblasener Ballon}}= (19.37\pm 0.35) \, \text{Bq}\, .
+\end{equation*}
+Nach der Installation der Schutzkappe, wurden in einem Intervall von einer Minute noch 162 Zerfälle detektiert und mit einer Aluminiumplatte 43.
+Bei der Messung ohne Abschirmung hingegen konnten 1197 Zerfälle pro Minute detektiert werden.
+Somit wurde nach der Installation der Abdeckung nur noch $13.53\%$ der ursprünglichen Zerfälle registriert.
+Das Hinzufügen einer Aluminiumplatte verringerte diese Anteil weiter  auf $3.59\%$ des Ursprungswertes.
+Es kann unter Betrachtung der Abnahme der Zerfälle gefolgert werden, dass $86.47\%$ der detektierten Strahlung $\alpha$-Strahlung war.
+Analog kann festgehalten werden, dass $3.59\%$ der Starhlung auf $\gamma$-Strahlung zurückgeführt werden kann.

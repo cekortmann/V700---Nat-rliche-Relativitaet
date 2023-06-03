@@ -12,7 +12,20 @@ from uncertainties.unumpy import (nominal_values as noms,   # Wert:             
 
 
 
-uH = ufloat(5.8167,2.4118)
+uH = ufloat(0.582,0.241)
 uPara = ufloat(7.4667,2.7325)
 
 print(uH-uPara)
+
+ueloon = ufloat(34, 5.83)
+
+ufloon = ufloat(5986.00, 77.37)
+
+def Aktivität(N,t):
+    return N/t
+
+print('Aktivität luftleerer Ballon', Aktivität(ueloon,60))
+print(Aktivität(ueloon,60)-uH)
+
+print('Aktivität aufgeblasener Ballon', Aktivität(ufloon,300))
+print(Aktivität(ufloon,300)-uH)
